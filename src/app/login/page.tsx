@@ -55,9 +55,8 @@ function Page() {
       if (typeof window !== "undefined") {
         localStorage.setItem("user", JSON.stringify(data));
       }
-
       setUser?.(data);
-      toast.success("Login successful!");
+      toast.success("Login successful! Please Wait ! Pushing to home");
       router.push("/home");
     } catch (error: unknown) {
       if (axios.isAxiosError(error)) {
@@ -154,6 +153,9 @@ function Page() {
             </Link>
           </div>
         </div>
+        <div className="mt-4 text-center text-sm text-gray-500">
+  👉 Use <span className="font-medium text-blue-600">qwe@gmail.com</span> and <span className="font-medium text-blue-600">123321</span> to try a demo login!
+  </div>
       </div>
     </div>
   );
