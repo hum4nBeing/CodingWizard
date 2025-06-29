@@ -40,7 +40,7 @@
 - **Database**:  
   - **MongoDB**: Stores user data, files, folders, and collaboration information.
 
-- **Authentication**:  
+- **Authentication**:
   - **JWT (JSON Web Tokens)**: Used for secure user authentication and token management.
 
 ---
